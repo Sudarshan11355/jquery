@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Darsh's Mobile Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    body, .ui-page {
+      background: #f1f4f8;
+      font-family: Arial, sans-serif;
+    }
+
+    .ui-header {
+      background: #00796B !important;
+      color: white !important;
+      border: none;
+    }
+
+    .ui-header h1, .ui-btn, .back-button {
+      color: white !important;
+    }
+
+    .ui-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 70vh;
+      text-align: center;
+      background: #E1BEE7 !important;
+    }
+
+    .ui-btn {
+      background: #FF7043 !important;
+      border: none !important;
+    }
+
+    .back-button {
+      margin-top: 30px;
+      background: #1976D2 !important;
+    }
+
+    .ui-listview > li > a {
+      background: white !important;
+      border: 1px solid #0288D1 !important;
+      color: #0288D1 !important;
+      font-weight: bold;
+    }
+
+    .ui-listview > li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div data-role="page" id="welcome">
+  <div data-role="header"><h1>Welcome</h1></div>
+  <div data-role="content">
+    <h2>Hello, I'm Darsh</h2>
+    <p>Third Year Information Technology Student</p>
+    <p>CGPA: 9.8</p>
+    <ul data-role="listview" data-inset="true">
+      <li><a href="#academics">Academics</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+<div data-role="page" id="academics">
+  <div data-role="header"><h1>Academics</h1></div>
+  <div data-role="content">
+    <p>Currently in Third Year of B.Tech in Information Technology.</p>
+    <p>CGPA: 9.8</p>
+    <a href="#welcome" data-role="button" data-icon="back" class="back-button">Back</a>
+  </div>
+</div>
+
+<div data-role="page" id="projects">
+  <div data-role="header"><h1>Projects</h1></div>
+  <div data-role="content">
+    <p>Project details coming soon.</p>
+    <a href="#welcome" data-role="button" data-icon="back" class="back-button">Back</a>
+  </div>
+</div>
+
+<div data-role="page" id="achievements">
+  <div data-role="header"><h1>Achievements</h1></div>
+  <div data-role="content">
+    <p>✔️ Qualified for GATE exam.</p>
+    <a href="#welcome" data-role="button" data-icon="back" class="back-button">Back</a>
+  </div>
+</div>
+
+<div data-role="page" id="contact">
+  <div data-role="header"><h1>Contact</h1></div>
+  <div data-role="content">
+    <p>Email: darsh@example.com</p>
+    <p>Phone: +91-XXXXXXXXXX</p>
+    <a href="#welcome" data-role="button" data-icon="back" class="back-button">Back</a>
+  </div>
+</div>
+
+</body>
+</html>
